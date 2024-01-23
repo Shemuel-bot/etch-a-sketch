@@ -1,11 +1,14 @@
 body{
-    display: flex;
+ 
 }
 #container{
+    
+    
     outline: auto;
-    display: flex;   
-    justify-content: space-between; 
+    display: flex;  
     flex-wrap: wrap;
     flex: 1;
+
     margin-top: 15px;
+    
 }

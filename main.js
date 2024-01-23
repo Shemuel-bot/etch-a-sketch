@@ -1,13 +1,23 @@
 const container = document.querySelector('div');
 
-container.style.width = '600px';
-container.style.height = '100vh';
 
-for (let index = 0; index < 16 * 16; index++) {
+
+let size = 16;
+
+
+container.style.width =  '900px';
+container.style.height = '900px';
+
+let elementSize = 900 / size;
+
+console.log(elementSize);
+for (let index = 0; index < size*size; index++) {
     const childDiv = document.createElement('div');
+    
    
-    childDiv.style.width = '115px';
-    childDiv.style.height = '115px';
+
+    childDiv.style.width = elementSize+'px';
+    childDiv.style.height = elementSize+'px';
     childDiv.style.backgroundColor = 'white';
     
     childDiv.addEventListener('mouseenter', () =>{
