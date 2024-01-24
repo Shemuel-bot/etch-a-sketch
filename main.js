@@ -13,7 +13,6 @@ button.addEventListener('click', () =>{
         SetPixels();
     }   
 })
-
 function RemoveSquares(){
     let child;
     for(let a = 0; a < (sideSize - Math.floor((0.4375 * sideSize))); a++){
@@ -27,15 +26,13 @@ function RemoveSquares(){
 function AddPixels(){   
     for (let index = 0; index < sideSize*sideSize; index++) {
         const childDiv = document.createElement('div');
-    
+        //makes sure the squares are equal sizes
         childDiv.style.width = (300 / size)+'px';
         childDiv.style.height = (300 / size)+'px';
-        childDiv.style.backgroundColor = 'white';
-        
+        childDiv.style.backgroundColor = 'white';     
         childDiv.addEventListener('mouseenter', () =>{
             childDiv.style.backgroundColor = ChangeColor();
         })
-    
         container.appendChild(childDiv);
     }
 }
