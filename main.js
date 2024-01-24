@@ -1,5 +1,3 @@
-
-
 let sideSize = 16;
 const container = document.querySelector('div');
 const button = document.querySelector('button');
@@ -41,7 +39,6 @@ function AddPixels(){
         container.appendChild(childDiv);
     }
 }
-
 function ChangeColor(){
     let part1 = Math.floor(Math.random() * 100);
     let part2 = Math.floor(Math.random() * 100);
@@ -50,5 +47,3 @@ function ChangeColor(){
 }
 //This is to add the pixels when the page loads 
 window.onload(AddPixels());
-
-
